@@ -10,13 +10,14 @@ final readonly class Config
         public string $apiKey,
         public string $version = '1.0.0',
         public string $baseUrl = 'https://api.lemonsqueezy.com/v1',
-    ) {}
+    ) {
+    }
 
     /**
      * @param array{
      *     apiKey:string,
-     *     version:string|null,
-     *     baseUrl:string|null,
+     *     version:string,
+     *     baseUrl:string,
      * } $data
      * @return Config
      */
